@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background: rgb(2,0,36);
+            background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .time-text {
+            color: #fff;
+            font-family: 'Comic Sans', cursive, sans-serif;
+            font-size: 48px;
+            position: absolute;
+            left: 24px;
+            top: 24px;
+        }
+        .time-text span {
+            font-size: 60px;
+            color: gold;
+            font-weight: 700;
+
+        }
+
+        .result {
+            color: fuchsia;
+            font-size: 72px;
+            font-family: 'Comic Sans', cursive, sans-serif;
+            font-size: 200px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <p class="time-text">You have <span id="timer"></span> seconds to click</p>
+    <p class="result" id="result"></p>
+    <script src="app.js"></script>
+</body>
+
+</html>
