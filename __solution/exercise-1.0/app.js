@@ -17,7 +17,6 @@ const result = document.getElementById('result');
 // The 'click' function
 function clickEvent() {
     result.innerText = "You Win!";
-
     // always remove the eventListener when you're done
     body.removeEventListener('click', clickEvent);
 }
