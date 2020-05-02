@@ -1,7 +1,7 @@
 // Exercise 1.0
 // ------------
 // Write an app that registers a click anywhere on the screen.
-// Once the user clicks, let them know that they did it!
+// Once the user clicks, add some text to the page.
 
 // Hints:
 // - Target the <body>

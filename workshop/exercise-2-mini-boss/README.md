@@ -2,7 +2,7 @@
 
 ## Exercise 2 - The Final Countdown... Clock... and Timer.
 
-_Remember that optional exercise from yesterday..._
+_Remember that optional exercise from the last workshop..._
 
 Now that you know events, you can make it much better for the user.
 
@@ -14,9 +14,9 @@ Create a page that
 
 1. contains 3 sections (one for each of the following)
 2. displays the current time
-2. contains a start/stop button with a stopwatch which starts at 00:00 and continues until the user clicks "stop"
-3. contains a timer where the user can enter a number of seconds, click start and the timer counts down to 0. There should be a sound announcingthe end as well.
+3. contains a start/stop button with a stopwatch which starts at 00:00 and continues until the user clicks "stop"
+4. contains a timer where the user can enter a number of seconds, click start and the timer counts down to 0. There should be a sound announcingthe end as well.
 
 ### Make it look "decent"
 
-Go as crazy as you like. It doesn't need to be complicated, just a little "purty."
+Be as creative as you like. It doesn't need to be complicated, just a little "purty."

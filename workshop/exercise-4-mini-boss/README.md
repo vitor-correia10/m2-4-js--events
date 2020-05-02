@@ -6,11 +6,11 @@ Building on the exercises done so far, write a program that
 
 - on load, there is only a 'Start' button
 - clicking on the start button
-    - deletes the button
-    - a random number of buttons appear on the screen.
+  - deletes the button
+  - a random number of buttons appear on the screen.
 - These buttons need to all be clicked within a given amount of time.
 
-If the user is successful, reward them! They've won the game!!
+If the user is successful, show a congratulatory message! They've won the game!!
 
 ### Note.
 

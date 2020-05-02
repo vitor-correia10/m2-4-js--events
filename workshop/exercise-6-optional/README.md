@@ -1,6 +1,6 @@
 # The Events Workshop
 
-_This is a challenge exercise_
+_This is an optional challenge/stretch exercise_
 
 ## Create your own game
 
