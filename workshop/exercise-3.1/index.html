@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .main {
+            display: grid;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        .btn-green{
+            background: lightgreen;
+        }
+
+        @media (min-width: 800px) {
+            .main {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .main {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose a button</h1>
+    <div class="main" id="main">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

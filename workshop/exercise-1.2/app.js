@@ -21,3 +21,52 @@
 // Stretch goal
 // Make the countdown live (show a countdown that updates several times a
 // second)
+let body = document.querySelector('body');
+    body.style.height = '100vh'; 
+let result = document.querySelector('#result');
+
+let whoWin = false;
+let win = 'You are so fast...You Won!';
+let lose = 'Unfortunately, You Lost!';
+
+//Time
+let time = document.querySelector('#time')
+    time.style.fontWeight = '700';
+
+let timeMath = Math.floor(Math.random() * 3 + 3);
+time.innerText = timeMath;
+
+let timeRemaining = timeMath;
+
+
+//Display a message
+function clicking(){
+    whoWin = true;
+    result.innerText = win;
+
+    body.removeEventListener('click', clicking);
+
+    clearInterval(couting);
+}
+
+setTimeout(
+    function notClicking(){
+        console.log('timeUp')
+        if(whoWin == false){
+            result.innerText = lose;
+
+            body.removeEventListener('click', clicking)
+        }
+
+        clearInterval(couting);
+    },
+timeMath * 1000 + 1000);
+
+body.addEventListener('click', clicking)
+
+//Decrease time
+let couting = setInterval(function decrease(){
+    timeRemaining =  timeRemaining - 1;
+    time.innerText = timeRemaining;    
+    }, 
+1000);

@@ -13,3 +13,36 @@
 // OPTIONAL
 // Feel free to add some CSS to this once you're done
 // --------------------------------------------------
+
+let mainPage = document.querySelector('body');
+    mainPage.style.height = '100vh';
+    mainPage.style.background = 'lightblue';
+
+let result = document.querySelector('#result');
+    result.style.fontSize = '28px';
+    result.style.textAlign = 'center';
+    result.style.color = 'darkgreen'
+
+
+let whoWin = false;
+let win = 'You Won!';
+let lose = 'You Lost!';
+
+function clickingOnPage(){
+    whoWin = true;
+    result.innerText = win;
+
+    mainPage.removeEventListener('click', clickingOnPage);
+}
+
+setTimeout(
+    function notClicking(){
+        if( whoWin == false){
+            result.innerText = lose;
+
+            mainPage.removeEventListener('click', clickingOnPage);
+        }
+    },
+1000);
+
+mainPage.addEventListener('click', clickingOnPage)
