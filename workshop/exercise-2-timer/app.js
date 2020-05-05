@@ -13,18 +13,14 @@ for (let x = 1; x <= 3; x++) {
 }
 
 //1 - current time
-let today = new Date();
-let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getUTCSeconds();
+function displayCurrentTime(){
+    let today = new Date();
+    let time = today.toLocaleTimeString();
+    document.querySelector('#section-1').innerText = `Current Time - > ${time}`;
+}
+displayCurrentTime();
 
-document.querySelector('#section-1').innerText = `Current Time - > ${time}`;
-
-// let addingSec = setInterval(function adding(){
-//     time =  time + 1;
-//     document.querySelector('#section-1').innerText = `Current Time -> ${time}`;
-//     console.log(time);
-// }, 
-// 1000);
-
+let addingSec = setInterval(displayCurrentTime, 1000);
 
 //2 - stopwatch
 let section2 = document.querySelector('#section-2');
@@ -53,9 +49,13 @@ function adding() {
         )}`
 }
 
+let isRunning = false;
 let timeInterval;
 function startTime(){
+    if (isRunning) return;
+    
     timeInterval = setInterval(adding, 1000);
+    isRunning = true;
 }
 
 // adding buttons
@@ -76,6 +76,8 @@ let btnStop = 'Stop'
 
 function stopWatchFunction () {
     clearTimeout(timeInterval);
+
+    isRunning = false;
 }
 
 document.querySelector('#button-2').addEventListener('click', stopWatchFunction );
